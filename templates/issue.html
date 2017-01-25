@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<h1>Issue - {{ this.date }} </h1>
+<ul>
+  {% for article in this.pagination.items %}
+  <li>
+    <p>{{ article.title }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

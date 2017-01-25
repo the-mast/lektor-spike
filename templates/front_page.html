@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<h1> Front Page</h1>
+  {% for article in this.pagination.items %}
+  <div class="article">
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.author }}</p>
+  <hr />
+  </div>
+  {% endfor %}
+{% endblock %}

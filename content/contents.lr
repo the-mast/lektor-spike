@@ -1,6 +1,11 @@
+_model: front_page
+---
 title: Welcome to The Mast!
 ---
 body:
 
 This is a basic demo website that shows how to use Lektor for a basic
 website with some pages.
+---
+date: 2017-01-25
+---
