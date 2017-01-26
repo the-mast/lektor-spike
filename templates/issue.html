@@ -3,9 +3,9 @@
 {% block body %}
 <h1>Issue - {{ this.date }} </h1>
 <ul>
-  {% for article in this.pagination.items %}
+  {% for article in this.children %}
   <li>
-    <p>{{ article.title }}</p>
+    <p><a href="{{ article|url }}">{{ article.title }}</a></p>
   </li>
   {% endfor %}
 </ul>
